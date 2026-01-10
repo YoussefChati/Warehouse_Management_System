@@ -9,7 +9,7 @@ using namespace std;
 DatabaseManager::DatabaseManager()
     : nodeCount_(0)
 {
-    // empty
+    
 }
 
 DatabaseManager::~DatabaseManager() {}
@@ -62,7 +62,7 @@ void DatabaseManager::showOrders() const {
     }
 }
 
-// -------------------- Problem 2: Low stock report --------------------
+
 
 vector<Product> DatabaseManager::getLowStockProducts(int threshold) const {
     vector<Product> result;
@@ -98,7 +98,6 @@ void DatabaseManager::printLowStockReport(int threshold, int targetQty) const {
          << totalMissing << endl;
 }
 
-// -------------------- Problem 1: Dijkstra (warehouse graph) --------------------
 
 void DatabaseManager::setWarehouseNodeCount(int nodeCount) {
     nodeCount_ = nodeCount;
