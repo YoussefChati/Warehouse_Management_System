@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build warehouse",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-g",
+        "main.cpp",
+        "Product.cpp",
+        "OrderItem.cpp",
+        "Order.cpp",
+        "User.cpp",
+        "Worker.cpp",
+        "DatabaseManager.cpp",
+        "-o",
+        "warehouse.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
