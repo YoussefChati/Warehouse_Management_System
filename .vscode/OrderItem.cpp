@@ -14,7 +14,7 @@ OrderItem::OrderItem(const Product& product, int quantity)
     updateSubtotal();
 }
 
-OrderItem::~OrdrItem() {}
+OrderItem::~OrderItem() {}
 
 void OrderItem::setQuantity(int quantity) {
     if (quantity >= 0) {
