@@ -8,13 +8,13 @@ int Order::nextId_ = 1; // static definition
 Order::Order()
     : orderId_(nextId_++), totalAmount_(0.0)
 {
-    // empty
+    
 }
 
 Order::Order(const User& customer)
     : orderId_(nextId_++), customer_(customer), totalAmount_(0.0)
 {
-    // empty
+    
 }
 
 Order::~Order() {}
